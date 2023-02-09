@@ -13,3 +13,23 @@ sudo systemctl reload firewalld
 
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
 
+How to uninstall GitLab installed on centos 7?
+steps to uninstall the gitlab:
+
+step1: Stop the gitlab service
+
+sudo gitlab-ctl stop
+
+step2 : Remove the gitlab from the system
+
+sudo yum remove gitlab-ee
+
+step3: Delete the files which are locally present on your system
+
+sudo rm -rf /opt/gitlab/
+
+sudo rm -rf /var/opt/gitlab
+
+sudo rm -rf /var/log/gitlab
+
+sudo rm -rf /etc/gitlab
