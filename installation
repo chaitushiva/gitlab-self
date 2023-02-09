@@ -1,0 +1,15 @@
+centos 7
+
+
+sudo yum install -y curl policycoreutils-python openssh-server perl
+# Enable OpenSSH server daemon if not enabled: sudo systemctl status sshd
+sudo systemctl enable sshd
+sudo systemctl start sshd
+# Check if opening the firewall is needed with: sudo systemctl status firewalld
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo systemctl reload firewalld
+
+
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
+
