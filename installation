@@ -33,3 +33,6 @@ sudo rm -rf /var/opt/gitlab
 sudo rm -rf /var/log/gitlab
 
 sudo rm -rf /etc/gitlab
+
+
+https://www.alibabacloud.com/help/en/container-service-for-kubernetes/latest/use-gitlab-ci-to-run-a-gitlab-runner-and-run-a-pipeline-on-kubernetes
